@@ -4,4 +4,4 @@ Project completed in three weeks during the internship at Permanence AI. More in
 
 <img width="984" alt="Screenshot 2025-01-24 at 2 43 42 PM" src="https://github.com/user-attachments/assets/c9e73287-295c-4231-83ad-b98b0e365d10" />
 
-<img width="986" alt="Screenshot 2025-01-24 at 2 43 59 PM" src="https://github.com/user-attachments/assets/a637b580-62c4-4d02-8771-ce26050ea3b6" />
+<img width="983" alt="Screenshot 2025-01-24 at 2 44 36 PM" src="https://github.com/user-attachments/assets/8854fb41-78ec-40dd-acf9-363fde68a4a6" />
