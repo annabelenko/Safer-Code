@@ -1,35 +1,36 @@
-# Safer-Code
+ # Good Code vs. Bad Code: Classifier or LLM?
 
-Title: Good Code vs. Bad Code: Use a Classifier or LLM?
-Objective: Encourage cleaner, safer code for developers by evaluating classifiers and large language models (LLMs).
+## Overview
+This project explores the effectiveness of using classifiers versus large language models (LLMs) to distinguish between "good" and "bad" code. The goal is to encourage cleaner and safer code for developers by leveraging AI-powered tools.
 
-Methodology
-	1.	Dataset:
-	•	Human-evaluated examples from [Microsoft’s dataset](https://github.com/microsoft/NoFunEval).
-	•	164 examples labeled as “good” or “bad” code.
-	2.	Classifiers Tested:
-	•	TF-IDF Vectorizer: Text feature extraction.
-	•	Algorithms: Logistic Regression, K-Nearest Neighbors (KNN), Random Forest Classifier (RFC).
-	•	Results: Accuracy varies across classifiers, with KNN (k=130) performing best (~55%).
-	3.	LLM Evaluation:
-	•	Model: GPT-3.5 vs. GPT-4.
-	•	Techniques: Prompt engineering, fine-tuned datasets, validation through human input.
-	•	Configuration: Adjustments for temperature, token limits, context window, and role.
+## Dataset
+We worked with human-evaluated examples from Microsoft’s [dataset](https://github.com/microsoft/NoFunEval), which contains 164 labeled examples of "good" and "bad" code. This dataset formed the basis for training and evaluating our models.
 
-Insights
-	•	Classifiers offer moderate accuracy but struggle with nuanced coding examples.
-	•	GPT-4 demonstrates potential for analyzing complex cases, making it suitable for tasks beyond the scope of simple classifiers.
+## Methodology
+1. **Classifiers**: 
+   - We used TF-IDF for feature extraction and tested various algorithms, including Logistic Regression, K-Nearest Neighbors (KNN), and Random Forest Classifier (RFC).
+   - The classifiers were evaluated on accuracy, precision, recall, and F1-score. KNN (k=100) performed the best, achieving ~55% accuracy.
 
-Next Steps
-	•	Expand dataset for better model generalization.
-	•	Introduce harder examples for robust validation.
-	•	Mitigate potential exploitation of obvious cues or biases by LLMs.
+2. **LLM Evaluation**:
+   - We tested OpenAI’s GPT-3.5 and GPT-4 models.
+   - By carefully designing prompts and configuring parameters (e.g., temperature, token limits, context windows), we assessed their ability to analyze and classify code snippets effectively.
 
-Tools and Technologies
-	•	Languages: Python
-	•	Libraries: Scikit-learn, Flask
-	•	Models: OpenAI’s GPT-3.5 and GPT-4
-	•	Evaluation Metrics: Precision, Recall, F1-Score, Accuracy
+## Insights
+- GPT-4 stands out for its capability to handle complex and ambiguous cases, making it a strong candidate for this task.
+
+## Next Steps
+- Expand the dataset to improve generalization.
+- Introduce harder examples to challenge the models.
+- Validate that LLMs aren’t relying on superficial cues or biases in the data.
+
+## Tools and Technologies
+- **Languages**: Python
+- **Libraries**: Scikit-learn, Flask. We also played around with CWE Library
+- **Models**: OpenAI GPT-3.5 and GPT-4
+- **Evaluation Metrics**: Precision, Recall, F1-Score, Accuracy
+
+## Why It Matters
+Encouraging better coding practices is vital for building robust and secure software. By exploring the strengths and weaknesses of classifiers and LLMs, this project aims to provide actionable insights to help developers write cleaner, safer code.
  
 <img width="984" alt="Screenshot 2025-01-24 at 2 43 42 PM" src="https://github.com/user-attachments/assets/c9e73287-295c-4231-83ad-b98b0e365d10" />
 
